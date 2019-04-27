@@ -174,7 +174,7 @@ For children mode, there are 7 options.
    - We will help you group the data into the format username_date_scope.txt file.
    - We also help you tag the items in chronological order.
    
-   ###### 1.1.1 Insert -guild
+   ###### 1.1.1 Insert -guide
    1. As normal, you need to enter the date for input.
    2. You need to enter the scope that you want to do insertion
    3. Enter the number of items you have bought that day
@@ -252,14 +252,14 @@ For children mode, there are 7 options.
 ## **Part.4 Common Questions**
 
    1. What is inititalization?
-   - Refer to Key concept
-   - Menu-> 6. Initialization
+   - create file of specific date
+   - Path: Menu-> 6. Initialization
    
    2. What is deep learning inititalization?
-   - Refer to Key concept
-   - Menu-> 7 Deep learning
-   - Menu -> 2 report
-   - Refer to key concept
+   - create file for holding deep learning matters
+   - Path  Menu-> 7 Deep learning
+   - Path: Menu -> 2 report
+   
    
    3. How to enter date in form of MMDD
    - We want you to give us month and day of specific date -> You can modify data from any date you want. 
