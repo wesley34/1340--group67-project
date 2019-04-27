@@ -51,58 +51,59 @@ This part focuses on problem statement and problem setting.
    -There are **insert** , **remove** and **edit** function.
    -Force return to main menu if no file of specific day is found.
    
-   ##### 1.1 Insert
+   ##### 1.1.1 Insert
    - main menu->edit->insert
    - There are 7 options.
    - Leave and 6 scopes for input data.
    - We will help you group the data into the format username_date_scope.txt file.
    - We also help you tag the items in chronological order.
    
-   ###### Insert -guild
+   ###### 1.1.1 Insert -guild
    1. As normal, you need to enter the date for input.
    2. You need to enter the scope that you want to do insertion
    3. Enter the number of items you have bought that day
    4. Following by name,number of that item and price.
    5. If item size is larger than 10 or price is greater than 100, there will be a pop-up double validation.
    
-   #### 1.2 Remove
+   #### 1.1.2 Remove
    -main menu->edit->remove
    -7 options - leave and 6 scopes like insert
    -We will then count the removed price and re-calculate the sum of that scope. A new sum will be shown in the       username_date_scope.txt file.
    
-   ##### Remove-guide
+   ##### 1.1.2 Remove-guide
    1. Refer Insert-guide 1-2
    2. You can enter multi-line that you want to remove
    3. After entering the unwanted line, enter 0 behind
-   #### 1.3 Edit
+   
+   #### 1.1.3 Edit
    main menu->edit->edit
    -7  options - leave and 6 scopes.
    - It helps you to remodify the data.
    
-   ##### Edit Guide
+   ##### 1. Edit Guide
    1. Refer to insert-guild rule 1-2
    2. You enter the problem line and re-enter the datas
    
-  #### 1.2 - search
+  #### 1.2 - Search
   Fast accessibility on reading their files.
   
-  ##### 1.2 search Guide.
+  ##### 1.2 Search Guide.
    1. Main menu->search
    2. Enter the date
    3. Enter the scope
    4. If you enter 7(ALL), you need to press y for reading next paper
   
   
-  #### 1.3 - sort
+  #### 1.3 - Sort
   - User-freindly sorting system.
   - Ascending and descending sort.(One of them)
   - Sort by price, number of specific items and name.(One of them)
   - You just need to enter the date and follow the black box.
   
-  #### 1.4 - setTasks
+  #### 1.4 - SetTasks
    Kids need to choose which tasks they've done and the pocket moeny will instantly store to the username_date_gain.txt. Then, they can ask their parents to gain their money after they finish the task.
    
-   ##### setTasks Guide
+   ##### SetTasks Guide
    1.  Only parents can assin task.
    2.  When childern done, they can go menu->task to remove the tasks
    3.  They can watch how many task they have not yet done in main menu
