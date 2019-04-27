@@ -117,19 +117,17 @@ This part focuses on problem statement and problem setting.
   5. We do not want the skipped data set, say you want to train from 1st Macch to 2rd Arpil, but you just have 1st april data, then the prediciton is not true with high possibility.
   
   #### 1.5 - DL guide
-  1. Main->7 deep learning
-  --------------------------------------------------
-  1.1 if you are first time to do deep learning
-  1.1.1 press y for deep learning initialization
-  1.1.2 press no otherwise
-  ------------------------------------------------
-  2  Enter the first day
-  3. Enter the second day
-  4. The duration between these 2 days will be took for training datas.
-  5  Main->2 Report
-  6. Enter the first day
-  7. Enter today.
-  8 . A prediction and accuracy from deep learing will be given.
+  - Main->7 deep learning
+  - if you are first time to do deep learning
+  - press y for deep learning initialization
+  - press no otherwise
+  -  Enter the first day
+  - Enter the second day
+  - The duration between these 2 days will be took for training datas.
+  - Main->2 Report
+  - Enter the first day
+  - Enter today.
+  - A prediction and accuracy from deep learing will be given.
   
 #### 1.6 Report
    We will generate a daily report of specific date. The customers can also read their previous report in file. The function will be dicussed below.
