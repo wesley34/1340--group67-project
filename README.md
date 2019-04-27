@@ -1,6 +1,5 @@
-# 1340
-# **Group 67**
-## Apps name : Your financial Mojordomo
+# ENGG1340 **Group 67**
+## Project name : Your financial Mojordomo
 
 ## About us
 1. Yam Chak Fung Wesley
@@ -17,15 +16,15 @@ This part focuses on problem statement and problem setting.
   In short, this system provides a spectrum of user-friendly, safe and efficient features to view, manage and track their kids' financial status. Thus, student can learn to plan better. As a result , we can promote a good econ-planning mindset to our next generation in a long term, contributing to the society. 
  
 ### **2. Problem setting**
-1. How to make a user friendly environment for add/delete/edit for different day?
+1. How to make a user friendly environment to do management?
 2. How to create a quick search and sort for our customers?
 3. How to give our customers detailed report and prediction for their future?
 4. How to make interation between parents and children?
-5. If a family has 3 childrens, how can we make a report to them seperately?
+5. How can we make a report for multiusers? -> 
 
 ## **Part 2: Functionalities and features**
   In this part, four main features - basic financial managment, prediction/report, login function, task trigger - will be discussed in detail one by one. 
-  
+ 
 ### **1. Basic Financial Managment**
 
    #### 0 Before all
@@ -138,7 +137,7 @@ This part focuses on problem statement and problem setting.
 ##### Skilled fulfilled
    - Dynamic memory management(vector,link-list,array,class,struct,multi-inheritance,encapsulation)
    - File input/output(file in and out of the data)
-   - Data manipulation such as sorting, searching, adding/editing/deleting data records(merge sort, selection sort, adding appending,delete edit)
+   - Data manipulation such as sorting, searching, adding/editing/deleting data records (merge sort, selection sort, adding appending,delete edit)
    - Program codes in multiple files (25 cpp and h file)
    - Proper indentation and naming styles
    - In-code documentation
@@ -147,33 +146,54 @@ This part focuses on problem statement and problem setting.
    - It reports you with the percentage and spenditure of specific region.  
    - The report contains the percentage and the total sum of each scope.
    - The precentage can tell the kids about their financial status statistically.
-   - Then, we have mean prediction and deep learning prediction which will provide 2 kinds of prediction to kids. Hence, they can plan for next day easily.(short term prediction, long term prediciton)
+   - Then, we have mean prediction and deep learning prediction which will provide 2 kinds of prediction to kids.
+     Hence, they can plan for next day easily.(short term prediction, long term prediciton)
       
 ### **3. Login Function**
 As we mentioned, financial status is sensitive personal information. A secured login system to prevent unwanted users to access is essential. There are 4 options here. They are Login, Register, Forget and Exit repectively. The feasures is discussed one by one in the following  
 
 #### 3.1 Multi-users
-With the login system, we do support **multi-users**. Say a family of 3 childrens, they can share the same computer but their documents will be separated. 
+   -With the login system, we do support **multi-users**. 
+   Say a family of 3 childrens, they can share the same computer but their documents will be separated. 
 
 #### 3.2 Login
-User first input username. If the username does not exist, a alert will pop out and user have to input again. And then user input the password. There are only **5 chances** input the right password considering the bot attack. After 5 times, the program will be terminated.  Once the user input the username and corresponding password correctly, it shows "Welcome" and enters the main menu. 
+   - Input username
+      The username exists -> a alert will pop out and user have to input again. 
+   - Input the password. 
+      **5 chances only**  considering the bot attack
+   -Once the user input the username and corresponding password correctly, it shows "Welcome" and enters the main menu. 
 
 #### 3.3 Register
-New user can sign up for an account before they use the program. Since the financial status is for the public. User can first input the username. If there is repetitive username, again an alert pops out. Then the user will need to input the password. For security reason and avoid unreasonally many data, the password must be within **6-20 characters combining both characters and numbers**. Moreover, we have double validation to ensure users input the right password. If registeration is success, a notification shows up as well. 
+   - Sign up for an account before they use the program. As it is open to the public. 
+   - Input the username. 
+      The username exists -> an alert 
+   - Input the password
+      For security reason and avoid unreasonally many data
+      -> **Must be within 6-20 characters combining both characters and numbers** 
+      -> Fouble validation to ensure users input the right password
+   - After registeration -> notification shows up
 
 #### 3.4 Forget
-Considering users may forget their username and password, they can input their email address here to find their data by entering their email address. To avoid the invalid data, there is a **format check**. Any invalid email leads to an alert. 
+   - Considering users may forget their username and password
+   - Input their email address here to find their data by entering their email address. 
+      -> To avoid the invalid data, there is a **format check**. Any invalid email -> alert. 
 
 #### 3.5 Exit
-After you use the system, you can leave here :)
+   - After you are done with the system, you can leave here :)
 
 ### **4. Task Trigger**
-Since the purpose of this system is to let kids have a user-friendly, safe and efficient tool to manage financial status by themselves, parents also plays an important role. This function aims to have interactivity between parents and their children, allowing parents to provide some solid motivation to their kids. 
-We use **linked list** to achieve this purpose for 2 reasons - the system can by better management on dynamic data structure as well as insertion and deletion. We have 5 features here. 
+Since the purpose of this system is to let kids have a user-friendly, safe and efficient tool to manage financial status by themselves, parents also plays an important role. This function aims to have interactivity between parents and their children, allowing parents to provide some solid motivations to their kids. 
+We use **linked list** to achieve this purpose for 2 reasons 
+- The system can by better management on dynamic data structure as well as insertion and deletion. We have 5 features here. 
 
 #### 4.1 Assign Task
-Parents can assign the task here. There is a node for each task with 4 data. The first one stores the task name, then the amount of bonus for completing the task, the third one is to check if the task has been done or not. 
-First they need to input the task. It is **okay even it is a sentence** like "Do Homework". Then they can input the bonus. The system will ask you for double confirmation and then continuation. User can simply type 'y' or 'n' to decide so it is more user-friendly. 
+   - Node for each task with 4 data. User need to input the first two.
+      Task name -> Okay even it is a sentence, eg. "Do Homework"
+      Bonus for completing the task
+      True/Falso for the status of completing the task
+      Next memory address
+   - Double confirmation and ask for continuation
+      Users simply type 'y' or 'n' to decide so it is more user-friendly. 
 
 #### 4.2 View Task
 Parents can check if tasks have finished or not here. Task name, bonus and status are all shown here. Moreover, if they wish to delete unwanted the task, they can simply input the line of the task. The **menu will be updated instantly**. The corresponding data in the memory will also be deleted at the same time to avoid data leak. 
@@ -181,91 +201,117 @@ Parents can check if tasks have finished or not here. Task name, bonus and statu
 #### 4.3 Initialize Task
 This feature provides a **quick way to clear all the tasks**. Again, a double comfimation is required to prevent wrong input. 
 
-#### 1.5 Sort Task
-Only sorting by price is provide since it is not a easy way to sort a linked list. However, A special algorithom is used to sort the linked list - **Merge Sort**. It is preferred for sorting linked list. It is because in linked list to access i th index, the system travels every node from the head to look for i th node as we don’t have continuous block of memory. Merge sort accesses data sequentially and the need of random access is low, thus **higher efficiency**. 
+#### 4.4 Sort Task
+   - Only sorting by price is provide since it is not a easy way to sort a linked list
+   - A special algorithom is used - **Merge Sort**. 
+      It is preferred for sorting linked list because
+      -> In linked list to access i th index 
+          -> The system travels every node from the head to look for i th node as we don’t have continuous block of memory 
+            -> Merge sort accesses data sequentially and the need of random access is low
+               ->Thus **higher efficiency**. 
 
-#### 1.4 Complete Task
-- Kids can view the task here. Task name, bonus and status are all shown here. Moreover, if they have finished the task, they can simply input the line of the task. The **menu is updated at once** and **the income will be recorded at the same time**. 
+#### 4.5 Complete Task
+   - Kids can view the task here. Task name, bonus and status are all shown here. 
+   -> Finished the task -> simply input the line of the task
+   - **The menu is updated at once** 
+   - **The income will be recorded at the same time**. 
 
 ## **Part 3: How can I get started**
-- We can start by login.cpp and excute the file. 
-The first step is to register and login. If you forget your username or password, do not worry, you can input your email and we will contact you. 
-
-- After signing in, there are 2 modes - Children mode and Parents mode by entering 1 or 2. 
+   - We can start by login.cpp and excute the file. 
+   - The first step is to register -> login
+   - If you forget your username or password, do not worry, you can input your email and we will contact you. 
+   - After signing in, there are 2 modes 
+   - Choose Children mode and Parents mode by entering 1 or 2. 
 
 #### If you are parents
-- It is the mode for parents to modify the task. Parents can assign tasks, delete tasks and sort tasks here. There are four options here. 
-- First they enter 1 to assign tasks. First they need to enter the task name, then the bonus once the kid finished that task. They system will ask for the confirmation again to ensure no mistakes. If parents wish to continue, they can just enter 'y'. Or enter 'n' to return to the menu. 
-- Then, they can remove tasks assigned in by entering 2. The menu will show the current tasks in real time. If you remove any one of it, the menu responses at the same time. 
-Sort tasks is to sort by price only if parents wish kids to finish some more urgent or valuable tasks first. 
-Once everything is done, users can just press'0' to leave and they can comeback to modify anytime. 
+   - It is the mode for parents to modify the task
+      Parents can assign / delete / sort tasks here
+   - Enter 1 to assign tasks
+      Enter the task name -> the bonus once the kid finished that task -> Double confirmation to ensure no mistake -> Ask to Continue 
+   - Enter 2 to remove / view tasks
+      Current tasks in "real time"
+      If you remove any one of it -> the menu responses at the same time 
+   - Enter 3 to sort tasks 
+      If parents wish kids to finish some more urgent or valuable tasks first. 
+   - Enter 0 to leave 
+      They can comeback to modify anytime. 
 
 #### If you are kids 
-
 **Must Read**
+For children mode, there are 7 options. 
+**REMEMBER initialize(option 6), so that you can create a file of that day for futher usage**. For remaining options are easy to follow. **For deep learning part, you need to initialize it ONCE in deep learning menu or report menu for the FIRST time**. It will ask you if initialize. You just need to choose Yes **for the first time**, NO **for the future**.(very important, I recap it in  twice) The following shows you the way to initialize the system and the deep learning model.  
 
-##### In short
-1. What is inititalization?
-- Refer to Key concept
-- menu->6. Initialization
-###### Guide - Initialize
-1. Login->Kids->6.Initalize
-2. Enter a date for setting of computer
-3. Now you can do furthur application on the dates that you have been created before.
-----------------------------------
-2. What is deep learning inititalization?
-- Refer to Key concept
-- menu-> 7 Deep learning
-- menu -> 2 report
-- Refer to key concept
-###### Guide -> Deep learning initialize
-1. Press y for first time seeing the pop-up
-2. Press no for confirmation
+   ###### Guide : How to initialize
+   - Login-> Kids-> 6.Initalize
+   - Enter a date for setting of computer
+   - Now you can do furthur application on the dates that you have been created before.
+   
+   ###### Guide : Deep learning initialize
+   - Press y for first time seeing the pop-up
 
-##### Long
-For children mode, there are 7 options. The most important thing is that you need to **initialize(option 6), so that you can create a file of that day for futher usage**. For remaining options are easy to follow. Yet, second point to notice is that, for deep learning part, you just **need to initialize it once in deep learning menu or report menu for the first time**. It will ask you if initialize. You just need to choose Yes **for the first time**, then enter No for later.(very important, I recap it in  twice)
-
-
-**Key concept**
-------------------------------
-##### **MMDD**
-- We want you to give us month and day of specific date.
-- For example :
-- 3rd July is 0703;
-- 20th June is 0620;
-- 12th Nov is 1112. 
+##### **Edit Your Wallet**
+   - menu-> edit your wallet
+   - Kid can insert, delete and edit their expense and income here. 
+   - Enter the date in form of MMDD (eg. 1st of July -> 0701) 
+      -> To delcare the specific date you wish to modify. 
+   - Choose Insert / Remove / Edit
+   - Choose the category
+   - Enter the number of different items and then enter them one by one
+      -> the name of the item -> number of the item -> total price -> Confirm :)
+   - Be reminded that the total price means total sum of that price. 
+   
 ##### **Report**
-- The report consist of two parts - the current date's report and the prediction. First you need to input the date and category you wish to check. 
-- The screen will show the report and a text file is generated for users. 
+   - The report consists of two parts 
+      The current date's report 
+      The prediction
+   - Input the date and category you wish to check
+   - The screen will show the report 
+   - A text file is generated for users for further usage
+
 ##### **Initialization on main menu**
-- menu->6. Initialization
-- Create a new file for specific date
+   - Menu-> 6. Initialization
+   - Create a new file for specific date
 
 ##### **Deep learning inititalization**
-- menu-> 7 Deep learning
-- menu -> 2 report
-- Setting for deep learning
-- We need to tell the computer to create a paper for controlling the calculation
-- Once you do it, there will have a paper forever for controlling
-- Else, no paper to help you
+   - menu-> 7 Deep learning
+   - menu -> 2 report
+   - Setting for deep learning
+   - We need to tell the computer to create a file for controlling the calculation
+   - Once you do it, there will have a paper forever for controlling
 
 ##### **Re-Initialization on add/delete/edit menu**
-- menu->edit->insert/remove/edit-> Re-Initialization
-- To clear all data on specific date
+   - menu->edit->insert/remove/edit-> Re-Initialization
+   - To clear all data on specific date
 
 ##### **Sort** 
-- menu->sort
-- You can Sort here. 
-
-##### **Edit**
-- menu->edit
-- Kid can insert, delete and edit their expense and income here. 
-- You need to enter the date in form of MMDD (eg. 1st of July -> 0701) first to delcare the specific date you wish to modify. - - Then you can choose Insert, remove or edit. After it, you need to choose the category, then choose the number of different items to input, then the name of the item, number of the item, total price and confirm it.
-- Be reminded that the total price means total sum of that price. 
+   - menu -> sort
+   - You can Sort here. 
 
 ##### **Task trigger** 
-- menu->4.Tasks
-- In the main menu, there will be a reminder remind you how many task you have to do. For example, if your parents assign 2 tasks, then it will shown '2 tasks is waiting you'. You can view tasks here and if you have finish, select the line of that task. It will change from 'Doing' to 'Done' instantly. 
+   - Menu-> 4.Tasks
+   - In the main menu, there will be a reminder **reminds you how many task to do**
+   For example, if your parents assign 2 tasks, then show 1 tasks is waiting you'
+   After you have done one of them -> Show '1 tasks is waiting you'
+   - You can view tasks here 
+   - If you have finish - select the line of that task. It will change from 'Doing' to 'Done' instantly. 
+
+##### Common Questions
+   1. What is inititalization?
+   - Refer to Key concept
+   - Menu-> 6. Initialization
+   
+   2. What is deep learning inititalization?
+   - Refer to Key concept
+   - Menu-> 7 Deep learning
+   - Menu -> 2 report
+   - Refer to key concept
+   
+   3. How to enter date in form of MMDD
+   - We want you to give us month and day of specific date -> You can modify data from any date you want. 
+   - For example :
+      3rd July = 0703
+      20th June = 0620
+      12th Nov = 1112 
 
 ## **Part 4: Limitations**
 1. Checkers have been added to avoid invaid input, say in the main menu, if users input any characters except 0- 7, an alert pops out. So we try to simplify the input by just entering a character or number. However, it is still impossible to include every exception case.  
@@ -273,4 +319,4 @@ For children mode, there are 7 options. The most important thing is that you nee
 
 3. Too few data. As deep learning model requires lot of data and time to train. Thus, the predicition is not accurate for now. However,  we do not have a database to collect and save that amounts of data methodically. It is still at a primary stage and we will enhance it in the future. 
 
-4. Linux clear screen **cout << "\003[2J\033[1;1h" << endl;**  seems not working in us
+4. Some codes are not compatible in Windons and Linux. Testing on both platforms has been done. However, there may be unexpected errors. Like, "cout << "\003[2J\033[1;1h" << endl;"
