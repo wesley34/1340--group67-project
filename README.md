@@ -36,7 +36,7 @@ It is the fundamental part of the whole project and features we use in this part
    - Proper indentation and naming styles
    - In-code documentation
    
-#### **2. Prediction/Report**
+### **2. Prediction/Report**
    - We have today's report by collecting exist data and prediction done by deep learning
    - It reports you with the percentage and spenditure of specific region.  
    - The report contains the percentage and the total sum of each scope.
@@ -249,7 +249,7 @@ For children mode, there are 7 options.
 #### 1.6 Report
    We will generate a daily report of specific date. The customers can also read their previous report in file. The function will be dicussed below.
 
-##### Common Questions
+## **Part.4 Common Questions**
 
    1. What is inititalization?
    - Refer to Key concept
@@ -268,7 +268,7 @@ For children mode, there are 7 options.
       20th June = 0620
       12th Nov = 1112 
 
-## **Part 4: Limitations**
+## **Part 5: Limitations**
 1. Checkers have been added to avoid invaid input, say in the main menu, if users input any characters except 0- 7, an alert pops out. So we try to simplify the input by just entering a character or number. However, it is still impossible to include every exception case.  
 2. Only standary library is allowed and being year 1 students, a lot of features do not work as we expected, like we made masking for the password and deep learning model for prediction, providing higher security and flexibility. Still, it is a precious opportunity for learning. 
 
